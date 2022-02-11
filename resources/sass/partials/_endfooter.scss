@@ -1,0 +1,36 @@
+.endfooter {
+  background-color: $endFooterColor;
+  .endfooter_container{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em 0;
+    ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      li {
+        padding: 0 0.5em;
+        a {
+          width: 16%;
+          text-decoration: none;
+          color: $wardBlueColor;
+          text-transform: uppercase;
+          font-weight: bold;
+          cursor: pointer;
+        }
+        img {
+          width: 80%;
+          cursor: pointer;
+        }
+      }
+    }
+    button {
+      background-color: $endFooterColor;
+      border: 2px solid $mainBlueColor;
+      text-transform: uppercase;
+      color: white;
+      padding: 1em 1.5em;
+      cursor: pointer;
+    }
+  }
+}

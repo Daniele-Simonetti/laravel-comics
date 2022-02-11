@@ -14,6 +14,7 @@
     @yield('content')
 
     @include('guest.partials.footer')
+    @include('guest.partials.endFooter')
   </div>
 </body>
 </html>

@@ -14,6 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $data = ['nomePagina' => 'DC Comics'];
+    $data = ['comic' => config('comics'), 'nomePagina' => 'DC Comics'];
     return view('guest.home', $data);
 });

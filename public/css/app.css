@@ -47,11 +47,19 @@ header .header_nav_list-item a {
   color: gray;
   display: flex;
   align-items: center;
-  padding: 3.9em 1.3em;
+  padding: 3.9em 1.2em;
   height: 100%;
 }
-header .header_nav_list-item a:hover, header .header_nav_list-item a:active, header .header_nav_list-item a.active {
+header .header_nav_list-item a:hover, header .header_nav_list-item a:active, header .header_nav_list-item a:focus, header .header_nav_list-item a.active {
   border-bottom: 5px solid #4EB1FC;
+}
+header .header_input input {
+  text-align: end;
+  border: 0;
+  border-bottom: 2px solid #4EB1FC;
+}
+header .header_input input:focus-visible, header .header_input input:focus-within {
+  outline: none;
 }
 
 main {

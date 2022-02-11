@@ -4,16 +4,16 @@
   </div>
   <nav class="header_nav">
     <ul class="header_nav_list">
-      <li class="header_nav_list-item"><a href="#">Characters</a></li>
-      <li class="header_nav_list-item"><a href="#">Comics</a></li>
-      <li class="header_nav_list-item"><a href="#">Movies</a></li>
-      <li class="header_nav_list-item"><a href="#">Tv</a></li>
-      <li class="header_nav_list-item"><a href="#">Games</a></li>
-      <li class="header_nav_list-item"><a href="#">Collectibles</a></li>
-      <li class="header_nav_list-item"><a href="#">Videos</a></li>
-      <li class="header_nav_list-item"><a href="#">fans</a></li>
-      <li class="header_nav_list-item"><a href="#">News</a></li>
-      <li class="header_nav_list-item"><a href="#">Shop</a></li>
+      <li class="header_nav_list-item"><a href="{{route('home')}}">Characters</a></li>
+      <li class="header_nav_list-item"><a class="{{ 'home' === Route::currentRouteName() ? 'active' : '' }}" href="{{route('home')}}">Comics</a></li>
+      <li class="header_nav_list-item"><a href="{{route('home')}}">Movies</a></li>
+      <li class="header_nav_list-item"><a href="{{route('home')}}">Tv</a></li>
+      <li class="header_nav_list-item"><a href="{{route('home')}}">Games</a></li>
+      <li class="header_nav_list-item"><a href="{{route('home')}}">Collectibles</a></li>
+      <li class="header_nav_list-item"><a href="{{route('home')}}">Videos</a></li>
+      <li class="header_nav_list-item"><a href="{{route('home')}}">fans</a></li>
+      <li class="header_nav_list-item"><a href="{{route('home')}}">News</a></li>
+      <li class="header_nav_list-item"><a href="{{route('home')}}">Shop</a></li>
     </ul>
   </nav>
   <div class="header_input">

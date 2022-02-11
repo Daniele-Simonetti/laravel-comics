@@ -16,4 +16,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $data = ['comic' => config('comics'), 'nomePagina' => 'DC Comics'];
     return view('guest.home', $data);
-});
+})->name('home');

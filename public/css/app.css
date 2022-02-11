@@ -7,3 +7,44 @@
 html {
   font-size: 100%;
 }
+
+.container-70 {
+  width: 70%;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo img {
+  width: 70px;
+  padding: 1em 0;
+}
+header .header_nav_list {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+header .header_nav_list-item {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.7em;
+}
+header .header_nav_list-item a {
+  text-decoration: none;
+  color: gray;
+  display: flex;
+  align-items: center;
+  padding: 2em 1em;
+  height: 100%;
+}
+header .header_nav_list-item a:hover, header .header_nav_list-item a:active, header .header_nav_list-item a.active {
+  border-bottom: 5px solid #4EB1FC;
+}

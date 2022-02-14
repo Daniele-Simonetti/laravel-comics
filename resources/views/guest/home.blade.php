@@ -17,12 +17,14 @@
       <div class="container-80">
         <div class="cards">
           @foreach ($comic as $item_comic)
-          <div class="card">
-            <div>
-            <img src="{{$item_comic['thumb']}}" alt="{{$item_comic['title']}}">
+          <a href="{{route('shop', $item_comic['id'])}}">
+            <div class="card">
+              <div>
+              <img src="{{$item_comic['thumb']}}" alt="{{$item_comic['title']}}">
+              </div>
+              <span>{{ $item_comic['series'] }}</span>
             </div>
-            <span>{{ $item_comic['series'] }}</span>
-          </div>
+          </a>
               
           @endforeach
         </div>

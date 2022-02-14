@@ -19,7 +19,7 @@ Route::get('/', function () {
 })->name('home');
 
 
-Route::get('comic/{id}', function($id) {
+Route::get('shop/{id}', function($id) {
     $collection = collect(config('comics'));
     $comic = $collection->where('id', $id);
     if ($comic->count() === 0) {
@@ -32,4 +32,4 @@ Route::get('comic/{id}', function($id) {
         'comic' => $singleComic,
         'nomePagina' => $singleComic['series']
     ]);
-})->name('comic');
+})->name('shop');

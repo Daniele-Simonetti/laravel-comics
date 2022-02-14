@@ -13,7 +13,7 @@
       <li class="header_nav_list-item"><a href="{{route('home')}}">Videos</a></li>
       <li class="header_nav_list-item"><a href="{{route('home')}}">fans</a></li>
       <li class="header_nav_list-item"><a href="{{route('home')}}">News</a></li>
-      <li class="header_nav_list-item"><a href="{{route('home')}}">Shop</a></li>
+      <li class="header_nav_list-item"><a class="{{ 'shop' === Route::currentRouteName() ? 'active' : '' }}" href="{{route('home')}}">Shop</a></li>
     </ul>
   </nav>
   <div class="header_input">

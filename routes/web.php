@@ -19,7 +19,17 @@ Route::get('/', function () {
 })->name('home');
 
 
-Route::get('/comic', function() {
-    $data = ['nomePagina' => 'DC Comics'];
-    return view('guest.comic', $data);
+Route::get('comic/{id}', function($id) {
+    $collection = collect(config('comics'));
+    $comic = $collection->where('id', $id);
+    if ($comic->count() === 0) {
+    }
+    $singleComic = '';
+    foreach ($comic as $value) {
+        $singleComic = $value;
+    }
+    return view('guest.comic', [
+        'comic' => $singleComic,
+        'nomePagina' => $singleComic['series']
+    ]);
 })->name('comic');

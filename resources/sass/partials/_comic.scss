@@ -1,0 +1,23 @@
+.comic__page {
+  width: 57%;
+  margin: 0 auto;
+  img {
+    width: 20%;
+    margin-top: 8em;
+  }
+  div.comic__price {
+    width: 80%;
+    display: flex;
+    div.price {
+      width: 70%;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 1em;
+    }
+    div.availability {
+      width: 30%;
+      text-align: center;
+      border-left: 1px solid gray;
+    }
+  }
+}

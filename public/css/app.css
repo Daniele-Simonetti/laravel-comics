@@ -204,3 +204,27 @@ footer .container-80 .right-col {
   padding: 1em 1.5em;
   cursor: pointer;
 }
+
+.comic__page {
+  width: 57%;
+  margin: 0 auto;
+}
+.comic__page img {
+  width: 20%;
+  margin-top: 8em;
+}
+.comic__page div.comic__price {
+  width: 80%;
+  display: flex;
+}
+.comic__page div.comic__price div.price {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1em;
+}
+.comic__page div.comic__price div.availability {
+  width: 30%;
+  text-align: center;
+  border-left: 1px solid gray;
+}

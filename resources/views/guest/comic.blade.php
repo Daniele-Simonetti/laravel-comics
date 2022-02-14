@@ -71,4 +71,10 @@
 		</div>
 	</div>
 </div>
+<div class="end_comic">
+	<div class="final_box">
+		<img src="{{asset('img/cta-icons.png')}}" alt="">
+		
+	</div>
+</div>
 @endsection

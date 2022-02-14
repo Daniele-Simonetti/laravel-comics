@@ -1,3 +1,14 @@
+div.jumbo.single_comic {
+  border-bottom: 70px solid $mainBlueColor;
+  height: 380px;
+  img {
+    position: absolute;
+    top: 180px;
+    left: 295px;
+  }
+}
+
+
 .comic__page {
   width: 60%;
   margin: 0 auto;
@@ -7,18 +18,25 @@
   }
   div.box {
     display: flex;
+    margin: 3em 0;
     div.comic__text {
+      width: 80%;
+      margin: 1.5em 0;
       h1 {
         font-size: 1.27em;
         text-transform: uppercase;
+        color: $singleComicTitle;
       }
-      width: 80%;
-      margin: 1.5em 0;
+      p {
+        font-size: 0.86em;
+        line-height: 1.6em;
+      }
       div.comic__price {
         display: flex;
         background-color: $pirceBarColor;
         color: lightgrey;
         border-bottom: 1px solid gray;
+        margin: 1.2em 0 1em 0;
         div.price {
           width: 70%;
           display: flex;
@@ -51,5 +69,17 @@
         margin: 0;
       }
     }
+  }
+}
+
+.talent_specs {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  .talent {
+    width: 50%;
+  }
+  .specs {
+    width: 50%;
   }
 }

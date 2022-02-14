@@ -213,6 +213,16 @@ footer .container-80 .right-col {
   cursor: pointer;
 }
 
+div.jumbo.single_comic {
+  border-bottom: 70px solid #0282F9;
+  height: 380px;
+}
+div.jumbo.single_comic img {
+  position: absolute;
+  top: 180px;
+  left: 295px;
+}
+
 .comic__page {
   width: 60%;
   margin: 0 auto;
@@ -223,6 +233,7 @@ footer .container-80 .right-col {
 }
 .comic__page div.box {
   display: flex;
+  margin: 3em 0;
 }
 .comic__page div.box div.comic__text {
   width: 80%;
@@ -231,12 +242,18 @@ footer .container-80 .right-col {
 .comic__page div.box div.comic__text h1 {
   font-size: 1.27em;
   text-transform: uppercase;
+  color: #0B496B;
+}
+.comic__page div.box div.comic__text p {
+  font-size: 0.86em;
+  line-height: 1.6em;
 }
 .comic__page div.box div.comic__text div.comic__price {
   display: flex;
   background-color: #54BC59;
   color: lightgrey;
   border-bottom: 1px solid gray;
+  margin: 1.2em 0 1em 0;
 }
 .comic__page div.box div.comic__text div.comic__price div.price {
   width: 70%;
@@ -267,4 +284,16 @@ footer .container-80 .right-col {
 .comic__page div.box div.comic__adv img {
   width: 100%;
   margin: 0;
+}
+
+.talent_specs {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+}
+.talent_specs .talent {
+  width: 50%;
+}
+.talent_specs .specs {
+  width: 50%;
 }

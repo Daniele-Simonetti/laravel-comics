@@ -1,23 +1,55 @@
 .comic__page {
-  width: 57%;
+  width: 60%;
   margin: 0 auto;
   img {
     width: 20%;
     margin-top: 8em;
   }
-  div.comic__price {
-    width: 80%;
+  div.box {
     display: flex;
-    div.price {
-      width: 70%;
-      display: flex;
-      justify-content: space-between;
-      padding: 0 1em;
+    div.comic__text {
+      h1 {
+        font-size: 1.27em;
+        text-transform: uppercase;
+      }
+      width: 80%;
+      margin: 1.5em 0;
+      div.comic__price {
+        display: flex;
+        background-color: $pirceBarColor;
+        color: lightgrey;
+        border-bottom: 1px solid gray;
+        div.price {
+          width: 70%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 0.8em 1.3em;
+          font-size: 0.7em;
+        }
+        div.availability {
+          width: 30%;
+          padding: 0.8em 0;
+          font-weight: 100;
+          text-align: center;
+          border-left: 1px solid gray;
+          font-size: 0.9em;
+        }
+      }
     }
-    div.availability {
-      width: 30%;
-      text-align: center;
-      border-left: 1px solid gray;
+    div.comic__adv {
+      padding: 0 2em;
+      overflow-y: scroll;
+      h2 {
+        padding: 0;
+        color: gray;
+        text-align: end;
+        font-size: 1em;
+      }
+      img {
+        width: 100%;
+        margin: 0;
+      }
     }
   }
 }

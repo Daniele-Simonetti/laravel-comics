@@ -30,34 +30,44 @@
 	</div>
 </div>
 <div class="talent_specs">
-	<div class="talent">
-		<div class="first-row">
-			<h1>Talent</h1>
+	<div class="content-box">
+		<div class="talent">
+			<div class="first-row">
+				<h1>Talent</h1>
+			</div>
+			<div class="second-row">
+				<h4>Art by:</h4>
+				<p>
+					@foreach ($comic['artists'] as $item)
+						{{ $item }}, 		
+					@endforeach
+				</p>
+			</div>
+			<div class="third-row">
+				<h4>Written by:</h4>
+				<p>
+					@foreach ($comic['writers'] as $item)
+						{{ $item }},		
+					@endforeach
+				</p>
+			</div>
 		</div>
-		<div class="second-row">
-			<h4>Art by:</h4>
-			<a href="#"></a>
-		</div>
-		<div class="third-row">
-			<h4>Written by:</h4>
-			<a href="#"></a>
-		</div>
-	</div>
-	<div class="specs">
-		<div class="first">
-			<h1>Specs</h1>
-		</div>
-		<div class="second">
-			<h4>Series</h4>
-			<a href="#"></a>
-		</div>
-		<div class="third">
-			<h4>U.S. Price</h4>
-			<span></span>
-		</div>
-		<div class="fourth">
-			<h4>On Sale Date:</h4>
-			<span></span>
+		<div class="specs">
+			<div class="first">
+				<h1>Specs</h1>
+			</div>
+			<div class="second">
+				<h4>Series</h4>
+				<a href="#">{{$comic['series']}}</a>
+			</div>
+			<div class="third">
+				<h4>U.S. Price</h4>
+				<span>{{$comic['price']}}</span>
+			</div>
+			<div class="fourth">
+				<h4>On Sale Date:</h4>
+				<span>{{$comic['sale_date']}}</span>
+			</div>
 		</div>
 	</div>
 </div>

@@ -73,13 +73,56 @@ div.jumbo.single_comic {
 }
 
 .talent_specs {
-  width: 60%;
-  margin: 0 auto;
-  display: flex;
-  .talent {
-    width: 50%;
-  }
-  .specs {
-    width: 50%;
+  background-color: $singleComicEndBg;
+  .content-box {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    .talent {
+      width: 50%;
+      padding-right: 2.5em;
+      h4 {
+        width: 84%;
+      }
+      h4,
+      h1 {
+        color: $singleComicTitle;
+      }
+      .first-row,
+      .second-row,
+      .third-row {
+        border-bottom: 1px solid lightgray;
+        display: flex;
+        padding: 1em 0;
+        p {
+          font-size: 0.68em;
+          margin: 0;
+          padding: 0;
+          width: 129%;
+          color: $endSingleColor;
+        }
+      }
+    }
+    .specs {
+      width: 50%;
+      padding-right: 2.5em;
+      h4,
+      h1 {
+        color: $singleComicTitle;
+      }
+      a {
+        color: $endSingleColor;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+      .first,
+      .second,
+      .third,
+      .fourth {
+        border-bottom: 1px solid lightgray;
+        display: flex;
+        padding: 0.5em;
+      }
+    }
   }
 }

@@ -287,13 +287,58 @@ div.jumbo.single_comic img {
 }
 
 .talent_specs {
+  background-color: #F6F6F6;
+}
+.talent_specs .content-box {
   width: 60%;
   margin: 0 auto;
   display: flex;
 }
-.talent_specs .talent {
+.talent_specs .content-box .talent {
   width: 50%;
+  padding-right: 2.5em;
 }
-.talent_specs .specs {
+.talent_specs .content-box .talent h4 {
+  width: 84%;
+}
+.talent_specs .content-box .talent h4,
+.talent_specs .content-box .talent h1 {
+  color: #0B496B;
+}
+.talent_specs .content-box .talent .first-row,
+.talent_specs .content-box .talent .second-row,
+.talent_specs .content-box .talent .third-row {
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  padding: 1em 0;
+}
+.talent_specs .content-box .talent .first-row p,
+.talent_specs .content-box .talent .second-row p,
+.talent_specs .content-box .talent .third-row p {
+  font-size: 0.68em;
+  margin: 0;
+  padding: 0;
+  width: 129%;
+  color: #5AC7E5;
+}
+.talent_specs .content-box .specs {
   width: 50%;
+  padding-right: 2.5em;
+}
+.talent_specs .content-box .specs h4,
+.talent_specs .content-box .specs h1 {
+  color: #0B496B;
+}
+.talent_specs .content-box .specs a {
+  color: #5AC7E5;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.talent_specs .content-box .specs .first,
+.talent_specs .content-box .specs .second,
+.talent_specs .content-box .specs .third,
+.talent_specs .content-box .specs .fourth {
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  padding: 0.5em;
 }
